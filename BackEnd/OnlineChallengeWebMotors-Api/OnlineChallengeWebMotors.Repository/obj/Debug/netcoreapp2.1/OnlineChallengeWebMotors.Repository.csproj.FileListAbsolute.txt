@@ -1,0 +1,14 @@
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.deps.json
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.pdb
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.pdb
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\bin\Debug\netcoreapp2.1\System.Data.SqlClient.xml
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.csprojAssemblyReference.cache
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.csproj.CoreCompileInputs.cache
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.AssemblyInfoInputs.cache
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.AssemblyInfo.cs
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.csproj.CopyComplete
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Repository\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Repository.pdb

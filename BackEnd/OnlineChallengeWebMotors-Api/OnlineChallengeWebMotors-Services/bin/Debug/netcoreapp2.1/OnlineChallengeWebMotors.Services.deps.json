@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "OnlineChallengeWebMotors.Services/1.0.0": {
+        "dependencies": {
+          "OnlineChallengeWebMotors.Domain": "1.0.0",
+          "OnlineChallengeWebMotors.Repository": "1.0.0"
+        },
+        "runtime": {
+          "OnlineChallengeWebMotors.Services.dll": {}
+        }
+      },
+      "OnlineChallengeWebMotors.Domain/1.0.0": {
+        "runtime": {
+          "OnlineChallengeWebMotors.Domain.dll": {}
+        }
+      },
+      "OnlineChallengeWebMotors.Repository/1.0.0": {
+        "dependencies": {
+          "OnlineChallengeWebMotors.Domain": "1.0.0",
+          "System.Data.SqlClient": "4.4.0.0"
+        },
+        "runtime": {
+          "OnlineChallengeWebMotors.Repository.dll": {}
+        }
+      },
+      "System.Data.SqlClient.Reference/4.4.0.0": {
+        "runtime": {
+          "System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.6.26606.5"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineChallengeWebMotors.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineChallengeWebMotors.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineChallengeWebMotors.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data.SqlClient.Reference/4.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.deps.json
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\bin\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.pdb
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.csproj.CoreCompileInputs.cache
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.AssemblyInfoInputs.cache
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.AssemblyInfo.cs
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.dll
+C:\Users\allan\source\repos\OnlineChallengeWebMotors-Api\OnlineChallengeWebMotors.Domain\obj\Debug\netcoreapp2.1\OnlineChallengeWebMotors.Domain.pdb

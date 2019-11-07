@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>OnlineChallengeWebMotors_Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineChallengeWebMotors.Domain\OnlineChallengeWebMotors.Domain.csproj" />
+    <ProjectReference Include="..\OnlineChallengeWebMotors.Repository\OnlineChallengeWebMotors.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
