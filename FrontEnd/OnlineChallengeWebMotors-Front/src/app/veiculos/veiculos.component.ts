@@ -6,6 +6,7 @@ import { Versao } from '../core/versao';
 import { MatTableDataSource } from '@angular/material/table';
 import { VeiculosService } from '../services/veiculos/veiculos.service';
 import { Carro } from '../core/carro';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-veiculos',
@@ -56,8 +57,7 @@ export class VeiculosComponent implements OnInit {
     });
   }
 
-  AddCarro(){
-    debugger
+  addCarro(){
     let marca = this.selectedMarca;
     let modelo = this.selectedModelo;
     let versao = this.selectedVersao;
@@ -79,7 +79,6 @@ export class VeiculosComponent implements OnInit {
     this.selectedCarro.Observacao = 'Sem avarias';
 
     this.veiculosService.addVeiculo(this.selectedCarro).subscribe(data => {
-      debugger
       this.retorno = data;
       this.getCarros();
     });
@@ -92,21 +91,21 @@ export class VeiculosComponent implements OnInit {
   }
 
   deleteCarro(id: number){
-    debugger
     this.veiculosService.removerVeiculo(id).subscribe(data => {
-      debugger
       this.retorno = data;
       this.getCarros();
     });
   }
 
   changeCarro(carro: Carro){
-    debugger
     this.veiculosService.alterarVeiculo(carro).subscribe(data => {
-      debugger
       this.retorno = data;
       this.getCarros();
     });
+  }
+
+  setAlterar(elem: any){
+    //TODO
   }
 
 }

@@ -34,6 +34,7 @@ namespace OnlineChallengeWebMotors_Api
 
             services.AddTransient<IVeiculosService, VeiculosService>();
             services.AddTransient<IVeiculosRepository, VeiculosRepository>();
+            services.AddSingleton<IConfiguration>(Configuration);
 
             // ********************
             // Setup CORS

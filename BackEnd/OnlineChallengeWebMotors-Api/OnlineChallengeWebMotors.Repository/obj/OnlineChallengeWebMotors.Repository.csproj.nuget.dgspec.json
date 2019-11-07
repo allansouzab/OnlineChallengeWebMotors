@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Repository\\OnlineChallengeWebMotors.Repository.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\OnlineChallengeWebMotors.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\OnlineChallengeWebMotors.Domain.csproj",
+        "projectName": "OnlineChallengeWebMotors.Domain",
+        "projectPath": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\OnlineChallengeWebMotors.Domain.csproj",
+        "packagesPath": "C:\\Users\\ab.VORTX\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ab.VORTX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vortxrepositories.pkgs.visualstudio.com/_packaging/Vortx/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Repository\\OnlineChallengeWebMotors.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Repository\\OnlineChallengeWebMotors.Repository.csproj",
+        "projectName": "OnlineChallengeWebMotors.Repository",
+        "projectPath": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Repository\\OnlineChallengeWebMotors.Repository.csproj",
+        "packagesPath": "C:\\Users\\ab.VORTX\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ab.VORTX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vortxrepositories.pkgs.visualstudio.com/_packaging/Vortx/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\OnlineChallengeWebMotors.Domain.csproj": {
+                "projectPath": "C:\\Users\\ab.VORTX\\Documents\\ProjetosPessoal\\OnlineChallengeWebMotors\\BackEnd\\OnlineChallengeWebMotors-Api\\OnlineChallengeWebMotors.Domain\\OnlineChallengeWebMotors.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

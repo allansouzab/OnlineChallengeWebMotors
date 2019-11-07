@@ -1,4 +1,5 @@
-﻿using OnlineChallengeWebMotors.Domain.Entities;
+﻿using Microsoft.Extensions.Configuration;
+using OnlineChallengeWebMotors.Domain.Entities;
 using OnlineChallengeWebMotors.Repository.Interface;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,12 @@ namespace OnlineChallengeWebMotors.Repository.Concrete
 {
     public class VeiculosRepository : IVeiculosRepository
     {
-        private const string CON = "Data Source=localhost;Initial Catalog=teste_webmotors;Integrated Security=SSPI;";
+        public VeiculosRepository(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
 
         public Retorno Add(Carro carro)
         {
@@ -17,7 +23,7 @@ namespace OnlineChallengeWebMotors.Repository.Concrete
             {
                 using (var con = new SqlConnection())
                 {
-                    con.ConnectionString = CON;
+                    con.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                     con.Open();
                     using (var cmd = new SqlCommand())
                     {
@@ -60,7 +66,7 @@ namespace OnlineChallengeWebMotors.Repository.Concrete
             {
                 using (var con = new SqlConnection())
                 {
-                    con.ConnectionString = CON;
+                    con.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                     con.Open();
                     using (var cmd = new SqlCommand())
                     {
@@ -104,7 +110,7 @@ namespace OnlineChallengeWebMotors.Repository.Concrete
             {
                 using (var con = new SqlConnection())
                 {
-                    con.ConnectionString = CON;
+                    con.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                     con.Open();
                     using (var cmd = new SqlCommand())
                     {
@@ -144,7 +150,7 @@ namespace OnlineChallengeWebMotors.Repository.Concrete
             {
                 using (var con = new SqlConnection())
                 {
-                    con.ConnectionString = CON;
+                    con.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                     con.Open();
                     using (var cmd = new SqlCommand())
                     {

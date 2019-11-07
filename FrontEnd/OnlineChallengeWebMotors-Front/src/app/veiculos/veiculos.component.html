@@ -1,40 +1,118 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <select [(ngModel)]="selectedMarca" (change)="getModelosByMarca()">
-                <option disabled>Selecione uma marca</option>
-                <option *ngFor="let marca of marcas; let i = index" value="{{marca.ID}}">{{marca.Name}}</option>
-            </select>
-        </div>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+    Abrir modal de demonstração
+</button> -->
 
-        <div class="col-sm">
-            <select *ngIf="selectedMarca" [(ngModel)]="selectedModelo" (change)="getVersoesByModelo()">
-                <option disabled>Selecione um modelo</option>
-                <option *ngFor="let modelo of modelos; let i = index" value="{{modelo.ID}}">{{modelo.Name}}</option>
-            </select>
-            <select disabled *ngIf="!selectedMarca">
-                <option disabled>Selecione um modelo</option>
-            </select>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="modalAlterar" tabindex="-1" role="dialog" aria-labelledby="modalAlterarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Alterar veículo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <select [(ngModel)]="selectedMarca" id="selectMarca" (change)="getModelosByMarca()">
+                            <option disabled>Selecione uma marca</option>
+                            <option *ngFor="let marca of marcas; let i = index" value="{{marca.ID}}">{{marca.Name}}
+                            </option>
+                        </select>
+                    </div>
 
-        <div class="col-sm">
-            <select *ngIf="selectedModelo" [(ngModel)]="selectedVersao">
-                <option disabled>Selecione uma versão</option>
-                <option *ngFor="let versao of versoes; let i = index" value="{{versao.ID}}">{{versao.Name}}</option>
-            </select>
-            <select disabled *ngIf="!selectedModelo">
-                <option disabled>Selecione uma versão</option>
-            </select>
-        </div>
+                    <div class="col-md-12">
+                        <select *ngIf="selectedMarca" [(ngModel)]="selectedModelo" (change)="getVersoesByModelo()">
+                            <option disabled>Selecione um modelo</option>
+                            <option *ngFor="let modelo of modelos; let i = index" value="{{modelo.ID}}">
+                                {{modelo.Name}}</option>
+                        </select>
+                        <select disabled *ngIf="!selectedMarca">
+                            <option disabled>Selecione um modelo</option>
+                        </select>
+                    </div>
 
-        <div class="col-sm">
-            <button class="btn btn-outline-primary" (click)="AddCarro()">Adicionar</button>
+                    <div class="col-md-12">
+                        <select *ngIf="selectedModelo" [(ngModel)]="selectedVersao" id="selectVersao">
+                            <option disabled>Selecione uma versão</option>
+                            <option *ngFor="let versao of versoes; let i = index" value="{{versao.ID}}">
+                                {{versao.Name}}</option>
+                        </select>
+                        <select disabled *ngIf="!selectedModelo">
+                            <option disabled>Selecione uma versão</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
         </div>
     </div>
 </div>
 
 
+
+<div class="modal fade" id="modalAdicionar" tabindex="-1" role="dialog" aria-labelledby="modalAdicionarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar veículo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <select [(ngModel)]="selectedMarca" (change)="getModelosByMarca()">
+                            <option disabled>Selecione uma marca</option>
+                            <option *ngFor="let marca of marcas; let i = index" value="{{marca.ID}}">{{marca.Name}}
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <select *ngIf="selectedMarca" [(ngModel)]="selectedModelo" (change)="getVersoesByModelo()">
+                            <option disabled>Selecione um modelo</option>
+                            <option *ngFor="let modelo of modelos; let i = index" value="{{modelo.ID}}">
+                                {{modelo.Name}}</option>
+                        </select>
+                        <select disabled *ngIf="!selectedMarca">
+                            <option disabled>Selecione um modelo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <select *ngIf="selectedModelo" [(ngModel)]="selectedVersao">
+                            <option disabled>Selecione uma versão</option>
+                            <option *ngFor="let versao of versoes; let i = index" value="{{versao.ID}}">
+                                {{versao.Name}}</option>
+                        </select>
+                        <select disabled *ngIf="!selectedModelo">
+                            <option disabled>Selecione uma versão</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" (click)="addCarro()" data-dismiss="modal">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="mat-elevation-z8 table-size">
+    <br>
+    <div class="col-sm">
+        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#modalAdicionar">Adicionar</button>
+    </div>
+
     <table mat-table [dataSource]="dataSource">
 
         <ng-container matColumnDef="Marca">
@@ -70,8 +148,8 @@
         <ng-container matColumnDef="btn-primary">
             <th mat-header-cell *matHeaderCellDef> </th>
             <td mat-cell *matCellDef="let element">
-                <button type="button" class="btn btn-outline-success btn-sm"
-                    (click)="changeCarro(element)">Alterar</button>
+                <button type="button" class="btn btn-outline-success btn-sm" data-toggle="modal"
+                    data-target="#modalAlterar" (click)="setAlterar(element)">Alterar</button>
             </td>
         </ng-container>
 
